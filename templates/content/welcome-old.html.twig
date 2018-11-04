@@ -1,44 +1,17 @@
 {% extends 'base.html.twig' %}
 
+{% block title %}Willkommen{% endblock %}
+
 {% block content %}
-<!-- BREAKPOINT DEBUG 
-<span class="d-block d-sm-none">BREAKPOINT XS</span>
-<span class="d-none d-sm-block d-md-none">BREAKPOINT SM</span>
-<span class="d-none d-md-block d-lg-none">BREAKPOINT MD</span>
-<span class="d-none d-lg-block d-xl-none">BREAKPOINT LG</span>
-<span class="d-none d-xl-block">BREAKPOINT XL</span>
--->
-<section class="home layout-width content-center">
-	<!-- <div class="card bg-secondary mb-3 mb-3"> --> 
-	<div class="card border-success mb-3">
-		<div class="card-header"><b>Aktuelles</b></div>
-		<div class="card-body">
-			<div id="gallery_start_img" style="margin: 10px auto; padding: 0px;">
-				<img id="cr_img" src="img/_start_invitation1.jpg" style="margin:0;padding:0;"/>
-				<img id="cr_img" src="img/_start_invitation2.jpg" style="margin:0;padding:0;"/>
-			</div>	
-		</div>
-	</div>
-	<!-- <div class="card border-secondary mb-3"> -->
-	<div class="card bg-secondary mb-3 mb-3">
-		<div class="card-header"><b>Vergangenes</b></div>
-		<div class="card-body">
-			<div id="gallery_start_img" style="margin: 10px auto; padding: 0px;">
-				<img id="cr_img" src="img/_start_eventa.jpg" style="margin:0;padding:0;"/>
-				<img id="cr_img" src="img/_start_eventb.jpg" style="margin:0;padding:0;"/>
-			</div>
-			<div id="img-target"></div>
-			<div><button type="button" class="btn btn-outline-danger">Zeige mehr Vergangenes</button></div>
-		</div>
-	</div>
-
-</section>
-
-<!--
+	
 <div id="main" class="main">
 
 	<div class="start_img">
 
+		<div id="gallery_start_img" style="margin: 10px auto; padding: 0px;">
+			<img id="cr_img" src="img/_start_invitation1.jpg" style="margin:0;padding:0;"/>
+			<img id="cr_img" src="img/_start_invitation2.jpg" style="margin:0;padding:0;"/>
+		</div>	
 		<div id="gallery_start_img" style="margin: 10px auto; padding: 0px;">
 			<img id="cr_img" src="img/_start_eventa.jpg" style="margin:0;padding:0;"/>
 			<img id="cr_img" src="img/_start_eventb.jpg" style="margin:0;padding:0;"/>
@@ -99,5 +72,5 @@
 	</div>
 
 </div>
--->
+
 {% endblock %}

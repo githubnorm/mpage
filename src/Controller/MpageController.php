@@ -10,15 +10,20 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class MpageController extends Controller
 {
     /**
-     * @Route("/", name="weclome")
+     * @Route("/", name="welcome")
      * @Method({"GET"})
      */
     public function welcome()
     {
-        $number = random_int(0, 100);
-
+        #$number = random_int(0, 100);
         #return new Response('<html><body>Lucky number: '.$number.'</body></html>');
-        return $this->render('content/welcome.html.twig');
+        return $this->render(
+            'content/welcome.html.twig',
+            array(
+                'navLinkActive' => 'welcome',
+                'pageTitle' => 'Welcome'
+            )
+        );
     }
     
     /**
@@ -27,7 +32,13 @@ class MpageController extends Controller
      */
     public function vita()
     {
-        return $this->render('content/vita.html.twig');
+        return $this->render(
+            'content/vita.html.twig',
+            array(
+                'navLinkActive' => 'vita',
+                'pageTitle' => 'Vita'
+            )
+        );
     }
 
     /**
@@ -36,15 +47,39 @@ class MpageController extends Controller
      */
     public function gallery()
     {
-        return $this->render('content/gallery.html.twig');
+        return $this->render(
+            'content/gallery.html.twig',
+            array(
+                'navLinkActive' => 'gallery',
+                'pageTitle' => 'Gallery'
+            )
+        );
     }
 
     /**
-     * @Route("/contact", name="contact")
+     * @Route("/about", name="about")
      * @Method({"GET"})
      */
-    public function contact()
+    public function about()
     {
-        return $this->render('content/contact.html.twig');
+        return $this->render(
+            'content/about.html.twig',
+            array(
+                'navLinkActive' => 'about',
+                'pageTitle' => 'About'
+            )
+        );
+    }
+
+    /**
+     * @Route("/bstest", name="test")
+     * @Method({"GET"})
+     */
+    public function test()
+    {
+        return $this->render(
+            'content/bstest.html.twig',
+            array('navLinkActive' => 'welcome')
+        );
     }
 }
