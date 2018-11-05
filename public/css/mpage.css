@@ -81,52 +81,29 @@ section a:hover {
 .about-links a:hover {
 	font-weight: bold;
 }
-/* *** CONTENT - VITA: END *** */
+/* *** CONTENT - END *** */
 
-/* ************* ************* GALLERY ************* ************* */
-
-.gallery_pictures {
-
+/* *** GALLERY - BEGIN *** */
+.main-carousel {
+	margin-bottom: 75px;
 }
-.gallery_img {
-/* 	border: 15px solid white; */
-	z-index: 1;
+.gallery-cell {
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
 }
-.gallery_layer {
-	background-color: transparent;
-	z-index: 2;
-	opacity: 0.0;
+.format-a {
+	height: 565px;
+	padding-top: 545px;
 }
-.gallery_img_titel {
-	font-family: verdana;
-	font-size: 11px;
-	display: inline;
-	position: relative;
-	top: 15px;
+.img-01 {
+	background-image: url('../img/gallery/01.jpg');
 }
-.button_back, .button_next {
-	margin-top: 5px;
-	width: 0;
-  	height: 0;
-	cursor: pointer;
+.img-02 {
+	background-image: url('../img/gallery/02.jpg');
 }
-.button_back {
-	float: left;
-	margin-left: 10px;
-  	border-top: 15px solid transparent;
-  	border-right: 25px solid #666;
-  	border-bottom: 15px solid transparent;
+.img-03 {
+	background-image: url('../img/gallery/03.jpg');
 }
-.button_back:hover {
-	border-right: 25px solid #000;
-}
-.button_next {
-	float: right;
-	margin-right: 10px;
-  	border-top: 15px solid transparent;
-  	border-left: 25px solid #666;
-  	border-bottom: 15px solid transparent;
-}
-.button_next:hover {
-	border-left: 25px solid #000;
-}
+/* *** GALLERY - END *** */

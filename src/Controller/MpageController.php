@@ -70,16 +70,5 @@ class MpageController extends Controller
             )
         );
     }
-
-    /**
-     * @Route("/bstest", name="test")
-     * @Method({"GET"})
-     */
-    public function test()
-    {
-        return $this->render(
-            'content/bstest.html.twig',
-            array('navLinkActive' => 'welcome')
-        );
-    }
+    
 }

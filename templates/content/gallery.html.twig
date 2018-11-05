@@ -1,28 +1,19 @@
 {% extends 'base.html.twig' %}
 
-{% block javascript %}<script src="js/mpage.js"></script>{% endblock %}
+{% block javascript %}
+<link rel="stylesheet" href="css/flickity.min.css" media="screen">
+<script src="js/flickity.pkgd.min.js"></script>
+<script src="js/mpage.js"></script>
+{% endblock %}
 
 {% block content %}
-	
-<div id="main" class="main">
-
-	<table style="border:0;margin: auto;">
-		<tr>
-			<td id="gallery_img" style="margin:0;padding:0;width:500px;height:500px;background-image: url('img/img01.jpg');">
-				<img id="cr_img" src="img/image_copyright.gif" style="margin:0;padding:0;width:500px;height:500px;"/>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<div id="gallery_layer">
-					<div id="gallery_button_back" class="button_back"><!-- back --></div>
-					<div id="gallery_img_titel" class="gallery_img_titel">[TITEL]</div>
-					<div id="gallery_button_next" class="button_next"><!-- next --></div>
-				</div>
-			</td>
-		</tr>
-	</table>
-
-</div>
-
+<section>
+	<div class="container-fluid layout-width">
+		<div class="main-carousel">
+			<div class="gallery-cell format-a img-01"><span>Marita Czepa - <b>Kulturlandschaft I</b> - 2015 - Aquarell, Tusche auf Packpapier - 161 x 229 cm</span></div>
+			<div class="gallery-cell format-a img-02">Marita Czepa - <b>Kulturlandschaft II</b> - 2016 - Tusche auf Plakatpapier - 130 x 184 cm</div>
+			<div class="gallery-cell format-a img-03">Marita Czepa - <b>Kulturlandschaft III</b> - 2016 - Tusche auf Plakatpapier - 130 x 184 cm</div>
+		</div>
+	</div>
+</section>
 {% endblock %}

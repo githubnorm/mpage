@@ -24,4 +24,6 @@
             </ul>
         </div>
     </nav>
+    {% set menuPoint = navLinkActive|default is same as('welcome') ? 'Home' : pageTitle %}
+    <div class="d-xl-none">{{ menuPoint }}</div>
 </section>
