@@ -25,5 +25,5 @@
         </div>
     </nav>
     {% set menuPoint = navLinkActive|default is same as('welcome') ? 'Home' : pageTitle %}
-    <div class="d-xl-none">{{ menuPoint }}</div>
+    <div class="menuPoint d-xl-none">{{ menuPoint|default|upper }}</div>
 </section>
