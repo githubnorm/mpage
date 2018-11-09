@@ -1,33 +1,41 @@
 {% extends 'base.html.twig' %}
 
 {% block content %}
-<!-- BREAKPOINT DEBUG 
-<span class="d-block d-sm-none">BREAKPOINT XS</span>
-<span class="d-none d-sm-block d-md-none">BREAKPOINT SM</span>
-<span class="d-none d-md-block d-lg-none">BREAKPOINT MD</span>
-<span class="d-none d-lg-block d-xl-none">BREAKPOINT LG</span>
-<span class="d-none d-xl-block">BREAKPOINT XL</span>
--->
 <section class="home layout-width content-center">
 	<!-- <div class="card bg-secondary mb-3 mb-3"> --> 
 	<div class="card border-success mb-3">
 		<div class="card-header">
-			<b><a href="https://galerie-root.de/hotsunday/hotsunday-2018/" target="_blank">Hot Sunday am 18.11.2018</a></b>
+			<b>Hot Sunday am 18.11.2018</b>
+			<!--<b><a href="https://galerie-root.de/hotsunday/hotsunday-2018/" target="_blank">Hot Sunday am 18.11.2018</a></b>-->
 		</div>
 		<div class="card-body">
-			<div id="gallery_start_img" style="margin: 10px auto; padding: 0px;">
-				<img id="cr_img" src="img/events/yx_181118_hotsunday1.png" style="margin:0;padding:0;"/>
-				<img id="cr_img" src="img/events/yx_181118_hotsunday2.png" style="margin:0;padding:0;"/>
-			</div>	
+			<picture>
+				<source media="(min-width: 768px)" srcset="img/events/xyz_181118_hotsunday1.png">
+				<source media="(min-width: 576px)" srcset="img/events/medium/xyz_181118_hotsunday1.png">
+				<img src="img/events/small/xyz_181118_hotsunday1.png" alt="hotsunday">
+			</picture>
+			<picture>
+				<source media="(min-width: 768px)" srcset="img/events/xyz_181118_hotsunday2.png">
+				<source media="(min-width: 576px)" srcset="img/events/medium/xyz_181118_hotsunday2.png">
+				<img src="img/events/small/xyz_181118_hotsunday2.png" alt="hotsunday">
+			</picture>
 		</div>
 	</div>
 	<!-- <div class="card border-secondary mb-3"> -->
 	<div class="card bg-secondary mb-3 mb-3">
 		<div class="card-header"><b>Vergangenes</b></div>
 		<div class="card-body">
-			<div id="gallery_start_img" style="margin: 10px auto; padding: 0px;">
-				<img id="cr_img" src="img/events/old/_start_invitation1.jpg" style="margin:0;padding:0;"/>
-				<img id="cr_img" src="img/events/old/_start_invitation2.jpg" style="margin:0;padding:0;"/>
+			<div>
+				<picture>
+					<source media="(min-width: 768px)" srcset="img/events/xyz_180125_ausstellung1.jpg">
+					<source media="(min-width: 576px)" srcset="img/events/medium/xyz_180125_ausstellung1.jpg">
+					<img src="img/events/small/xyz_180125_ausstellung1.jpg" alt="ausstellung" style="width:100%;">
+				</picture>
+				<picture>
+					<source media="(min-width: 768px)" srcset="img/events/xyz_180125_ausstellung2.jpg">
+					<source media="(min-width: 576px)" srcset="img/events/medium/xyz_180125_ausstellung2.jpg">
+					<img src="img/events/small/xyz_180125_ausstellung2.jpg" alt="ausstellung" style="width:100%;">
+				</picture>
 			</div>	
 			<div id="show-more-target"></div>
 			<div><button type="button" class="btn btn-outline-danger">Zeige mehr Vergangenes</button></div>

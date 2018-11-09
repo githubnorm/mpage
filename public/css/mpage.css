@@ -23,12 +23,12 @@ section a:hover {
 }
 .mfont {
 	font-family: 'Marck Script', cursive;
-	font-size: 2.5rem;
+	font-size: 1.5rem;
 }
 .navButton {
 	position: absolute;
-	right: 3%;
-	top: 15px;
+	right: 4%;
+	top: 9px;
 }
 /* *** HEADER: END *** */
 
@@ -67,6 +67,12 @@ section a:hover {
 }
 .home {
 	text-align: center;
+}
+.home img {
+	width:100%;
+}
+.home button {
+	margin-top:20px;
 }
 .vita-headline {
 	background-color: #eee !important;

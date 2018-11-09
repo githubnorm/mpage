@@ -1,11 +1,17 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="de">
     <head>
         {% include 'inc/head.html.twig' %}
         {% block javascript %}{% endblock %}
     </head>
     <body>
         {% include 'inc/body-header.html.twig' %}
+        <!-- BREAKPOINT 
+        DEBUG: <span class="d-block d-sm-none">BREAKPOINT XS - Extra small devices (portrait phones, less than 576px</span>
+        <span class="d-none d-sm-block d-md-none">BREAKPOINT SM - Small devices (landscape phones, 576px and up</span>
+        <span class="d-none d-md-block d-lg-none">BREAKPOINT M - Medium devices (tablets, 768px and up)</span>
+        <span class="d-none d-lg-block d-xl-none">BREAKPOINT LG - Large devices (desktops, 992px and up)</span>
+        <span class="d-none d-xl-block">BREAKPOINT XL - Extra large devices (large desktops, 1200px and up)</span> -->
         {% block content %}{% endblock %}
         {% include 'inc/body-footer.html.twig' %}
     </body>
