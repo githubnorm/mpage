@@ -2,112 +2,45 @@
 
 {% block content %}
 <section class="home layout-width content-center">
-	<!-- <div class="card bg-secondary mb-3 mb-3"> --> 
-	<div class="card border-success mb-3">
-		<div class="card-header">
-			<b>Hot Sunday am 18.11.2018 in der Galerie ROOT</b>
-			<!--<b><a href="https://galerie-root.de/hotsunday/hotsunday-2018/" target="_blank">Hot Sunday am 18.11.2018</a></b>-->
-		</div>
+	<div class="card bg-secondary mb-3">
+		<div class="card-header"><b>Aktuelles</b></div>
 		<div class="card-body">
-			<picture>
-				<source media="(min-width: 768px)" srcset="img/events/xyz_181118_hotsunday1.png">
-				<source media="(min-width: 576px)" srcset="img/events/medium/xyz_181118_hotsunday1.png">
-				<img src="img/events/small/xyz_181118_hotsunday1.png" alt="hotsunday">
-			</picture>
-			<picture>
-				<source media="(min-width: 768px)" srcset="img/events/xyz_181118_hotsunday2.png">
-				<source media="(min-width: 576px)" srcset="img/events/medium/xyz_181118_hotsunday2.png">
-				<img src="img/events/small/xyz_181118_hotsunday2.png" alt="hotsunday">
-			</picture>
-		</div>
-	</div>
-	<!-- <div class="card border-secondary mb-3"> -->
-	<div class="card bg-secondary mb-3 mb-3">
-		<div class="card-header"><b>Vergangenes</b></div>
-		<div class="card-body">
-			<div>
+			{% set flyerURL = 'https://www.facebook.com/events/2307901129430741/' %}
+			<a href="{{ flyerURL }}" target="_blank"><b>"schön verpackt"</b><br>Kunstaustellung am 25.01.2019 in der Kran Bar</a><br>
+			<!-- <a href="https://www.art-karlsruhe.de/de/messe-planen/fuer-presse/pressemitteilungen/art-karlsruhe-2019-klassische-moderne-bis-gegenwartskunst.html" target="_blank">art KARLSRUHE vom 21. bis 24.02.2019, Galerie</a><br> -->
+			<br>
+			<p><a href="{{ flyerURL }}" target="_blank">
 				<picture>
-					<source media="(min-width: 768px)" srcset="img/events/xyz_180125_ausstellung1.jpg">
-					<source media="(min-width: 576px)" srcset="img/events/medium/xyz_180125_ausstellung1.jpg">
-					<img src="img/events/small/xyz_180125_ausstellung1.jpg" alt="ausstellung" style="width:100%;">
+					<source media="(min-width: 768px)" srcset="img/events/20190125_austellung_a_large.jpg">
+					<source media="(min-width: 576px)" srcset="img/events/20190125_austellung_a_medium.jpg">
+					<img src="img/events/20190125_austellung_a_small.jpg" title="schön verpackt" alt="schön verpackt">
 				</picture>
 				<picture>
-					<source media="(min-width: 768px)" srcset="img/events/xyz_180125_ausstellung2.jpg">
-					<source media="(min-width: 576px)" srcset="img/events/medium/xyz_180125_ausstellung2.jpg">
-					<img src="img/events/small/xyz_180125_ausstellung2.jpg" alt="ausstellung" style="width:100%;">
+					<source media="(min-width: 768px)" srcset="img/events/20190125_austellung_b_large.jpg">
+					<source media="(min-width: 576px)" srcset="img/events/20190125_austellung_b_medium.jpg">
+					<img src="img/events/20190125_austellung_b_small.jpg" title="schön verpackt" alt="schön verpackt">
 				</picture>
-			</div>	
-			<div id="show-more-target"></div>
-			<div><button type="button" class="btn btn-outline-danger">Zeige mehr Vergangenes</button></div>
+			</a></p>
+			<p class="hideImgUntilLoaded" data-src="img/events/20181118_hotsunday_a.png;img/events/20181118_hotsunday_b.png" data-title="Hot Sunday" data-url="https://galerie-root.de/hotsunday/hotsunday-2018/"><b>2018</b><br><br></p>
+			<p class="hideImgUntilLoaded" data-src="img/events/20180125_ausstellung_a.jpg;img/events/20180125_ausstellung_b.jpg" data-title="Austellung Mehrweg"></p>
+			<p class="hideImgUntilLoaded" data-src="img/events/20171013_start_eventa_a.jpg;img/events/20171013_start_eventa_b.jpg" data-title=".."><b>2017</b><br><br></p>
+			<p class="hideImgUntilLoaded" data-src="img/events/20170907_start_atelier_a.jpg;img/events/20170907_start_atelier_b.jpg;img/events/20170907_start_atelier_c.jpg" data-title="."></p>
+			<p class="hideImgUntilLoaded" data-src="img/events/20170105_start_offene_akademie_b.jpg;img/events/20170105_start_offene_akademie_a.jpg" data-title="!"></p>
+			<p class="hideImgUntilLoaded" data-src="img/events/20161208_start_trifolium_a.jpg;img/events/20161208_start_trifolium_b.jpg" data-title="."><b>2016</b><br><br></p>
+			<p class="hideImgUntilLoaded" data-src="img/events/20161106_start_hotsunday3_a.jpg;img/events/20161106_start_hotsunday3_b.jpg" data-title="."></p>
+			<p class="hideImgUntilLoaded" data-src="img/events/20160906_start_studenten_a.jpg;img/events/20160906_start_studenten_b.jpg;img/events/20160906_start_studenten_c.jpg" data-title="!"></p>
+			<p class="hideImgUntilLoaded" data-src="img/events/20160709_start_templin.jpg" data-title="."></p>
+			<p class="hideImgUntilLoaded" data-src="img/events/20151129_start_xtro.jpg" data-title="."><b>2015</b><br><br></p>
+			<p class="hideImgUntilLoaded" data-src="img/events/20151109_start_hotsunday2_a.jpg;img/events/20151109_start_hotsunday2_b.jpg" data-title="."></p>
+			<p class="hideImgUntilLoaded" data-src="img/events/20150705_start_einladung.jpg" data-title="."></p>
+			<p class="hideImgUntilLoaded" data-src="img/events/20150611_start_ateliers.jpg" data-title="."></p>
+			<p class="hideImgUntilLoaded" data-src="img/events/20140626_start_bluehen.jpg" data-title="."><b>2014</b><br><br></p>
+			<p class="hideImgUntilLoaded" data-src="img/events/20140608_hotsunday1.jpg" data-title="."></p>
+			<p class="hideImgUntilLoaded" data-src="img/events/20140430_galeriehoffmann.jpeg" data-title="Galerie Hoffmann @ Root"></p>
+			<p class="hideImgUntilLoaded" data-src="img/events/20140410_vernissage_a.jpg;img/events/20140410_vernissage_b.jpg" data-title="Vernissage"></p>
+			<p class="hideImgUntilLoaded" data-src="img/events/20140306_drunterdrueber_a.jpg;img/events/20140306_drunterdrueber_b.jpg" data-title="drunter & drüber"></p>
+			<div><button type="button" class="btn btn-outline-danger">Zeige mehr Veranstaltungen</button></div>
 		</div>
 	</div>
-
 </section>
-
-<!--
-<div id="main" class="main">
-
-	<div class="start_img">
-
-		<div id="gallery_start_img" style="margin: 10px auto; padding: 0px;">
-			<img id="cr_img" src="img/_start_eventa.jpg" style="margin:0;padding:0;"/>
-			<img id="cr_img" src="img/_start_eventb.jpg" style="margin:0;padding:0;"/>
-		</div>	
-		<div id="gallery_start_img" style="margin: 10px auto; padding: 0px;">
-			<img id="cr_img" src="img/_start_atelier1.jpg" style="margin:0;padding:0;"/>
-			<img id="cr_img" src="img/_start_atelier3.jpg" style="margin:0;padding:0;"/>
-			<img id="cr_img" src="img/_start_atelier2.jpg" style="margin:0;padding:0;"/>
-		</div>	
-		<div id="gallery_start_img" style="margin: 10px auto; padding: 0px;">
-			<img id="cr_img" src="img/_start_offene_akademie1.jpg" style="margin:0;padding:0;"/>
-			<img id="cr_img" src="img/_start_offene_akademie2.jpg" style="margin:0;padding:0;"/>
-		</div>	
-		<div id="gallery_start_img" style="margin: 10px auto; padding: 0px;">
-			<img id="cr_img" src="img/_start_trifolium1.jpg" style="margin:0;padding:0;"/>
-			<img id="cr_img" src="img/_start_trifolium2.jpg" style="margin:0;padding:0;"/>
-		</div>
-		<div id="gallery_start_img" style="margin: 10px auto; padding: 0px;">
-			<img id="cr_img" src="img/_start_hotsunday3a.jpg" style="margin:0;padding:0;"/>
-			<img id="cr_img" src="img/_start_hotsunday3b.jpg" style="margin:0;padding:0;"/>
-		</div>			
-		<div id="gallery_start_img" style="margin: 10px auto; padding: 0px;">
-			<img id="cr_img" src="img/_start_studenten_01.jpg" style="margin:0;padding:0;"/><br>
-			<img id="cr_img" src="img/_start_studenten_02.jpg" style="margin:0;padding:0;"/><br>
-			<img id="cr_img" src="img/_start_studenten_03.jpg" style="margin:0;padding:0;"/><br>
-			<img id="cr_img" src="img/_start_studenten_04.jpg" style="margin:0;padding:0;"/>
-		</div>
-		<div id="gallery_start_img" style="margin: 10px auto; padding: 0px;">
-			<img id="cr_img" src="img/_start_templin.jpg" style="margin:0;padding:0;"/>
-		</div>
-		<div id="gallery_start_img" style="margin: 10px auto; padding: 0px;">
-			<img id="cr_img" src="img/_start_hotsunday2a.jpg" style="margin:0;padding:0;"/>
-		</div>
-		<div id="gallery_start_img" style="margin: 10px auto; padding: 0px;">
-			<img id="cr_img" src="img/_start_hotsunday2b.jpg" style="margin:0;padding:0;"/>
-		</div>
-		<div id="gallery_start_img" style="margin: 10px auto; padding: 0px;">
-			<img id="cr_img" src="img/_start_xtro.jpg" style="margin:0;padding:0;"/>
-		</div>
-		<div id="gallery_start_img" style="margin: 10px auto; padding: 0px;">
-			<img id="cr_img" src="img/_start_bluehen.jpg" style="margin:0;padding:0;"/>
-		</div>
-		<div id="gallery_start_img" style="margin: 10px auto; padding: 0px;">
-			<img id="cr_img" src="img/_start_sunday.jpg" style="margin:0;padding:0;"/>
-		</div>
-		<div id="gallery_start_img" style="margin: 10px auto; padding: 0px;">
-			<img id="cr_img" src="img/_start_galerie.jpeg" style="margin:0;padding:0;"/>
-		</div>
-		<div id="gallery_start_img" style="margin: 10px auto; padding: 0px;">
-			<img id="cr_img" src="img/_startpage_card_l.jpg" style="margin:0;padding:0;"/>
-			<img id="cr_img" src="img/_startpage_card_r.jpg" style="margin:0;padding:0;"/>
-		</div>
-		<div id="gallery_start_img" style="margin: 10px auto; padding: 0px;">
-			<img id="cr_img" src="img/_startpage_postkarte_a.jpg" style="margin:0 0 5px 0;padding:0;"/>
-			<img id="cr_img" src="img/_startpage_postkarte_b.jpg" style="margin:0;padding:0;"/>
-		</div>
-		
-	</div>
-
-</div>
--->
 {% endblock %}

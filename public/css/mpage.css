@@ -14,6 +14,13 @@ section a:active {
 section a:hover {
 	text-decoration: underline;
 }
+/* TODO: find woff, ttf
+// https://css-tricks.com/snippets/css/using-font-face/
+@font-face {
+	font-family: 'Marck Script';
+	src:  url('../font/marckscript.woff2') format('woff2');
+  }
+  */
 /* *** COMMON: END*** */
 
 /* *** HEADER: BEGIN *** */
@@ -21,21 +28,35 @@ section a:hover {
 	margin-bottom: 10px;
 	text-align: center;
 }
+/* small+medium */
 .mfont {
 	font-family: 'Marck Script', cursive;
-	font-size: 1.5rem;
+	font-size: 2.0rem;
+}
+/* large */
+@media (min-width: 992px) {
+	.mfont {
+		font-family: 'Marck Script', cursive;
+		font-size: 2.3rem;
+	}
+}
+.nav-mob {
+	padding: 0;
 }
 .navButton {
 	position: absolute;
 	right: 4%;
-	top: 9px;
+	top: 7px;
 }
-.menuPoint {
-	color: rgba(0,0,0,0.9);
-	font-size: 0.8125rem;
-    font-weight: 400;
-	line-height: 1.5;
-	font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+/* small+medium */
+@media (min-width: 768px) {
+	.menuPoint {
+		color: rgba(0,0,0,0.9);
+		font-size: 0.8125rem;
+		font-weight: 400;
+		line-height: 1.5;
+		font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	}
 }
 /* *** HEADER: END *** */
 
@@ -76,14 +97,36 @@ section a:hover {
 	margin-left: auto;
 	margin-right: auto;
 }
+.text-center {
+	text-align: center;
+}
 .home {
 	text-align: center;
 }
+/* for small devices XS */
 .home img {
-	width:100%;
+	width: 100%;
+}
+/* for medium devices M */
+@media (min-width: 576px) {
+	.home img {
+		width: 100%;
+	}
+}
+/* for large devices LG, XL */
+@media (min-width: 768px) {
+	.home img {
+		width: auto;
+	}
 }
 .home button {
 	margin-top:20px;
+}
+.hideImgUntilLoaded {
+	display: none;
+}
+.showImage {
+	display: block;
 }
 .vita-headline {
 	background-color: #eee !important;
@@ -101,26 +144,50 @@ section a:hover {
 /* *** CONTENT - END *** */
 
 /* *** GALLERY - BEGIN *** */
-.main-carousel {
+.big-paintings-slider, .small-paintings-slider, .potrait-paintings-slider, .drawings-slider {
 	margin-bottom: 75px;
 }
 .gallery-cell {
 	width: 100%;
-	background-position: center;
-	background-repeat: no-repeat;
 	text-align: center;
+	background-image: url('../img/gallery/loader.gif');
+	background-repeat: no-repeat;
+	background-position: center;
 }
-.format-a {
-	height: 565px;
-	padding-top: 545px;
+/* for small */
+.title-gallery {
+	text-align: center;
+	font-family: 'Marck Script', cursive;
+	font-size: 1.1rem;
+	margin: 10px
 }
-.img-01 {
-	background-image: url('../img/gallery/01.jpg');
+/* for medium, large */
+@media (min-width: 576px) {
+	.title-gallery {
+		text-align: center;
+		font-family: 'Marck Script', cursive;
+		font-size: 1.4rem;
+		margin: 10px
+	}
 }
-.img-02 {
-	background-image: url('../img/gallery/02.jpg');
+.title-bottom { margin-top: 4px; }
+/* for small */
+.placeholder { 
+	width: 100%;
+	height: auto;
 }
-.img-03 {
-	background-image: url('../img/gallery/03.jpg');
+/* for medium */
+@media (min-width: 576px) {
+	.placeholder { 
+		width: 100%;
+		height: auto; 
+	}
+}
+/* for large */
+@media (min-width: 992px) {
+	.placeholder {
+		width: auto;
+		height: auto;
+	}
 }
 /* *** GALLERY - END *** */

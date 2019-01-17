@@ -8,10 +8,20 @@
 {% block content %}
 <section>
 	<div class="container-fluid layout-width">
-		<div class="main-carousel">
-			<div class="gallery-cell format-a img-01"><span>Marita Czepa - <b>Kulturlandschaft I</b> - 2015 - Aquarell, Tusche auf Packpapier - 161 x 229 cm</span></div>
-			<div class="gallery-cell format-a img-02">Marita Czepa - <b>Kulturlandschaft II</b> - 2016 - Tusche auf Plakatpapier - 130 x 184 cm</div>
-			<div class="gallery-cell format-a img-03">Marita Czepa - <b>Kulturlandschaft III</b> - 2016 - Tusche auf Plakatpapier - 130 x 184 cm</div>
+
+		{% include 'gallery/paintings_big.html.twig' %}
+		
+		{% include 'gallery/paintings_small.html.twig' %}
+
+		{% include 'gallery/paintings_potrait.html.twig' %}
+
+		{% include 'gallery/drawings.html.twig' %}
+
+		<br>
+		<div class="text-center">
+			<a href="pdf/catalog_mczepa.pdf" target="_blank">
+				<button type="button" class="btn btn-outline-danger">Lade den Katalog als PDF</button>
+			</a>
 		</div>
 	</div>
 </section>

@@ -2,25 +2,25 @@
     <div class="container-fluid justify-content-center d-none d-lg-block">
         <div class="mfont">Marita Czepa</div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center nav-mob">
         <span class="d-lg-none mfont">Marita Czepa</span>
         <button class="navbar-toggler navButton" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="nav justify-content-center collapse navbar-collapse" id="navbarColor03">
             <ul class="navbar-nav">
-            <li class="nav-item {% if navLinkActive|default is same as('welcome') %}active{% endif %}">
-                <a class="nav-link" href="/">HOME{% if navLinkActive|default is same as('welcome') %}<span class="sr-only">(current)</span>{% endif %}</a>
-            </li>
-            <li class="nav-item {% if navLinkActive|default is same as('vita') %}active{% endif %}">
-                <a class="nav-link" href="/vita">VITA{% if navLinkActive|default is same as('vita') %}<span class="sr-only">(current)</span>{% endif %}</a>
-            </li>
-            <li class="nav-item {% if navLinkActive|default is same as('gallery') %}active{% endif %}">
-                <a class="nav-link" href="/gallery">GALLERY{% if navLinkActive|default is same as('gallery') %}<span class="sr-only">(current)</span>{% endif %}</a>
-            </li>
-            <li class="nav-item {% if navLinkActive|default is same as('about') %}active{% endif %}">
-                <a class="nav-link" href="/about">ABOUT{% if navLinkActive|default is same as('about') %}<span class="sr-only">(current)</span>{% endif %}</a>
-            </li>
+                <li class="nav-item {% if navLinkActive|default is same as('welcome') %}active{% endif %}">
+                    <a class="nav-link" href="/">HOME{% if navLinkActive|default is same as('welcome') %}<span class="sr-only">(current)</span>{% endif %}</a>
+                </li>
+                <li class="nav-item {% if navLinkActive|default is same as('gallery') %}active{% endif %}">
+                    <a class="nav-link" href="/gallery">GALLERY{% if navLinkActive|default is same as('gallery') %}<span class="sr-only">(current)</span>{% endif %}</a>
+                </li>
+                <li class="nav-item {% if navLinkActive|default is same as('vita') %}active{% endif %}">
+                    <a class="nav-link" href="/vita">VITA{% if navLinkActive|default is same as('vita') %}<span class="sr-only">(current)</span>{% endif %}</a>
+                </li>
+                <li class="nav-item {% if navLinkActive|default is same as('about') %}active{% endif %}">
+                    <a class="nav-link" href="/about">ABOUT{% if navLinkActive|default is same as('about') %}<span class="sr-only">(current)</span>{% endif %}</a>
+                </li>
             </ul>
         </div>
     </nav>

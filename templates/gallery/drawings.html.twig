@@ -1,0 +1,22 @@
+<div class="title-gallery">Zeichnungen</div>
+{% set pathToBigPaintings = 'img/gallery/drawings' %}
+<div class="drawings-slider">
+	<div class="gallery-cell">
+		<div class="title-top d-sm-none d-block"><b>Fundstücke 1-9 aus der Serie Archäologie der Zukunft</b></div>
+		<picture>
+			<source media="(min-width: 768px)" srcset="{{ pathToBigPaintings }}/large/L01.jpg">
+			<source media="(min-width: 576px)" srcset="{{ pathToBigPaintings }}/medium/M01.jpg">
+			<img class="placeholder" src="{{ pathToBigPaintings }}/small/S01.jpg" title="Fundstücke 1-9" alt="Fundstücke 1-9" />
+		</picture>
+		<div class="title-bottom d-sm-none d-block">2015-2017 - Buntstift auf Karteikarte - 10,5 x 14,8cm</div>
+		<div class="title-bottom d-none d-sm-block"><b>Fundstücke 1-9 aus der Serie Archäologie der Zukunft</b> - 2015-2017 - Buntstift auf Karteikarte - 10,5 x 14,8cm</div>
+	</div>
+	<div class="gallery-cell">
+		<div class="title-top d-sm-none d-block"><b>Fundstücke 10-18 aus der Serie Archäologie der Zukunft</b></div>
+		<img class="placeholder" src="img/gallery/placeholder.png" title="Fundstücke 10-18" alt="Fundstücke 10-18"
+			data-flickity-lazyload-srcset="{{ pathToBigPaintings }}/small/S02.jpg 350w, {{ pathToBigPaintings }}/medium/M02.jpg 600w, {{ pathToBigPaintings }}/large/L02.jpg 750w" 
+			sizes="(max-width: 576px) 100%, (min-width: 576px) and (max-width: 768px) auto, (min-width: 768px) 750px" />
+		<div class="title-bottom d-sm-none d-block">2015-2017 - Buntstift auf Karteikarte - 10,5 x 14,8cm</div>
+		<div class="title-bottom d-none d-sm-block"><b>Fundstücke 10-18 aus der Serie Archäologie der Zukunft</b> - 2015-2017 - Buntstift auf Karteikarte - 10,5 x 14,8cm</div>
+	</div>
+</div>

@@ -1,0 +1,60 @@
+<div class="title-gallery">große Aquarelle auf Plakatpapier</div>
+{% set pathToBigPaintings = 'img/gallery/paintings_big' %}
+<div class="big-paintings-slider">
+	<div class="gallery-cell">
+		<div class="title-top d-sm-none d-block"><b>Kulturlandschaft I</b> (2015)</div>
+		<picture>
+			<source media="(min-width: 768px)" srcset="{{ pathToBigPaintings }}/large/L01.jpg">
+			<source media="(min-width: 576px)" srcset="{{ pathToBigPaintings }}/medium/M01.jpg">
+			<img class="placeholder" src="{{ pathToBigPaintings }}/small/S01.jpg" title="Kulturlandschaft I" alt="Kulturlandschaft I" />
+		</picture>
+		<div class="title-bottom d-sm-none d-block">Aquarell, Tusche auf Packpapier - 161 x 229 cm</div>
+		<div class="title-bottom d-none d-sm-block"><b>Kulturlandschaft I</b> - 2015 - Aquarell, Tusche auf Packpapier - 161 x 229 cm</div>
+	</div>
+	<div class="gallery-cell">
+		<div class="title-top d-sm-none d-block"><b>Kulturlandschaft II</b> (2016)</div>
+		<img class="placeholder" title="Kulturlandschaft II" alt="Kulturlandschaft II"
+			data-flickity-lazyload-srcset="{{ pathToBigPaintings }}/small/S02.jpg 350w, {{ pathToBigPaintings }}/medium/M02.jpg 600w, {{ pathToBigPaintings }}/large/L02.jpg 750w" 
+			sizes="(max-width: 576px) 100%, (min-width: 576px) and (max-width: 768px) auto, (min-width: 768px) 750px" />
+		<div class="title-bottom d-sm-none d-block">Tusche auf Plakatpapier - 130 x 184 cm</div>
+		<div class="title-bottom d-none d-sm-block"><b>Kulturlandschaft II</b> - 2016 - Tusche auf Plakatpapier - 130 x 184 cm</div>
+	</div>
+	<div class="gallery-cell">
+		<div class="title-top d-sm-none d-block"><b>Kulturlandschaft III</b> (2016)</div>
+		<img class="placeholder" title="Kulturlandschaft III" alt="Kulturlandschaft III"
+			data-flickity-lazyload-srcset="{{ pathToBigPaintings }}/small/S03.jpg 350w, {{ pathToBigPaintings }}/medium/M03.jpg 600w, {{ pathToBigPaintings }}/large/L03.jpg 750w" 
+			sizes="(max-width: 576px) 100%, (min-width: 576px) and (max-width: 768px) auto, (min-width: 768px) 750px" />
+		<div class="title-bottom d-sm-none d-block">Tusche auf Plakatpapier - 130 x 184 cm</div>
+		<div class="title-bottom d-none d-sm-block"><b>Kulturlandschaft III</b> - 2016 - Tusche auf Plakatpapier - 130 x 184 cm</div>
+	</div>
+	<div class="gallery-cell">
+		<div class="title-top d-sm-none d-block"><b>Arktis 2020</b> (2016)</div>
+		<img class="placeholder" title="Arktis 2020" alt="Arktis 2020"
+			data-flickity-lazyload-srcset="{{ pathToBigPaintings }}/small/S04.jpg 350w, {{ pathToBigPaintings }}/medium/M04.jpg 600w, {{ pathToBigPaintings }}/large/L04.jpg 750w" 
+			sizes="(max-width: 576px) 100%, (min-width: 576px) and (max-width: 768px) auto, (min-width: 768px) 750px" />
+		<div class="title-bottom d-sm-none d-block">Tusche auf Plakatpapier - 125 x 178 x 9cm</div>
+		<div class="title-bottom d-none d-sm-block"><b>Arktis 2020</b> - 2016 - Tusche auf Plakatpapier - 125 x 178 x 9cm</div>
+	</div>
+	<div class="gallery-cell">
+		<div class="title-top d-sm-none d-block"><b>Abraum</b> (2015)</div>
+		<img class="placeholder" title="Abraum" alt="Abraum"
+			data-flickity-lazyload-srcset="{{ pathToBigPaintings }}/small/S05.jpg 278w, {{ pathToBigPaintings }}/medium/M05.jpg 477w, {{ pathToBigPaintings }}/large/L05.jpg 598w" 
+			sizes="(max-width: 576px) 278px, (min-width: 576px) and (max-width: 768px) auto, (min-width: 768px) 598px" />
+		<div class="title-bottom d-sm-none d-block">Tusche, Aquarell auf Plakatpapier - 84 x 80 cm</div>
+		<div class="title-bottom d-none d-sm-block"><b>Abraum</b> - 2015 - Tusche, Aquarell auf Plakatpapier - 84 x 80 cm</div>
+	</div>
+{#
+	{% for i in 0..2 %}
+		<div class="gallery-cell">
+			<div class="title-top d-md-none d-block">Kulturlandschaft I - 2015</div>
+			<picture>
+				<source media="(min-width: 768px)" srcset="{{ pathToBigPaintings }}/01.jpg">
+				<source media="(min-width: 576px)" srcset="{{ pathToBigPaintings }}/medium/01.jpg">
+				<img src="{{ pathToBigPaintings }}/small/01.jpg" title="Kulturlandschaft I" alt="Kulturlandschaft I">
+			</picture>
+			<div class="title-bottom d-md-none d-block">Aquarell, Tusche auf Packpapier - 161 x 229 cm</div>
+			<div class="title-bottom d-none d-md-block">Kulturlandschaft I - 2015 - Aquarell, Tusche auf Packpapier - 161 x 229 cm</div>
+		</div>
+	{% endfor %}
+#}
+</div>
