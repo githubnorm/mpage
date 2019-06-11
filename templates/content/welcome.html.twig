@@ -5,11 +5,26 @@
 	<div class="card bg-secondary mb-3">
 		<div class="card-header"><b>Aktuelles</b></div>
 		<div class="card-body">
-			{% set flyerURL = 'https://www.facebook.com/events/2307901129430741/' %}
-			<a href="{{ flyerURL }}" target="_blank"><b>"schön verpackt"</b><br>Kunstaustellung am 25.01.2019 in der Kran Bar</a><br>
+			{% set flyerURL1 = 'https://ausstellerverzeichnis.art-karlsruhe.de/vis/v1/de/exhibitors/art19.57646?oid=95&lang=1&_query=czepa#vis__prodinfo_art_prod_0183' %}
+			<a href="{{ flyerURL1 }}" target="_blank"><b>"art karlsruhe 2019"</b><br>Kunstaustellung am 21-24.02.2019 in Karlsruhe</a><br>
 			<!-- <a href="https://www.art-karlsruhe.de/de/messe-planen/fuer-presse/pressemitteilungen/art-karlsruhe-2019-klassische-moderne-bis-gegenwartskunst.html" target="_blank">art KARLSRUHE vom 21. bis 24.02.2019, Galerie</a><br> -->
 			<br>
-			<p><a href="{{ flyerURL }}" target="_blank">
+			<p><a href="{{ flyerURL1 }}" target="_blank">
+				<picture>
+					<source media="(min-width: 768px)" srcset="img/events/20190221_art_karlsruhe_a_large.jpg">
+					<source media="(min-width: 576px)" srcset="img/events/20190221_art_karlsruhe_a_medium.jpg">
+					<img src="img/events/20190221_art_karlsruhe_a_small.jpg" title="art karlsruhe" alt="art karlsruhe">
+				</picture>
+				<picture>
+					<source media="(min-width: 768px)" srcset="img/events/20190221_art_karlsruhe_b_large.jpg">
+					<source media="(min-width: 576px)" srcset="img/events/20190221_art_karlsruhe_b_medium.jpg">
+					<img src="img/events/20190221_art_karlsruhe_b_small.jpg" title="art karlsruhe" alt="art karlsruhe">
+				</picture>
+			</a></p>
+			{% set flyerURL2 = 'https://www.facebook.com/events/2307901129430741/' %}
+			<a href="{{ flyerURL2 }}" target="_blank"><b>"schön verpackt"</b><br>Kunstaustellung am 25.01.2019 in der Kran Bar</a><br>
+			<br>
+			<p><a href="{{ flyerURL2 }}" target="_blank">
 				<picture>
 					<source media="(min-width: 768px)" srcset="img/events/20190125_austellung_a_large.jpg">
 					<source media="(min-width: 576px)" srcset="img/events/20190125_austellung_a_medium.jpg">
@@ -30,8 +45,8 @@
 			<p class="hideImgUntilLoaded" data-src="img/events/20161106_start_hotsunday3_a.jpg;img/events/20161106_start_hotsunday3_b.jpg" data-title="."></p>
 			<p class="hideImgUntilLoaded" data-src="img/events/20160906_start_studenten_a.jpg;img/events/20160906_start_studenten_b.jpg;img/events/20160906_start_studenten_c.jpg" data-title="!"></p>
 			<p class="hideImgUntilLoaded" data-src="img/events/20160709_start_templin.jpg" data-title="."></p>
-			<p class="hideImgUntilLoaded" data-src="img/events/20151129_start_xtro.jpg" data-title="."><b>2015</b><br><br></p>
-			<p class="hideImgUntilLoaded" data-src="img/events/20151109_start_hotsunday2_a.jpg;img/events/20151109_start_hotsunday2_b.jpg" data-title="."></p>
+			<!-- <p class="hideImgUntilLoaded" data-src="img/events/20151129_start_xtro.jpg" data-title="."> -->
+			<p class="hideImgUntilLoaded" data-src="img/events/20151109_start_hotsunday2_a.jpg;img/events/20151109_start_hotsunday2_b.jpg" data-title="."><b>2015</b><br><br></p>
 			<p class="hideImgUntilLoaded" data-src="img/events/20150705_start_einladung.jpg" data-title="."></p>
 			<p class="hideImgUntilLoaded" data-src="img/events/20150611_start_ateliers.jpg" data-title="."></p>
 			<p class="hideImgUntilLoaded" data-src="img/events/20140626_start_bluehen.jpg" data-title="."><b>2014</b><br><br></p>
